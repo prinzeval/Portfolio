@@ -3,8 +3,8 @@ import './footer.css';
 
 const Footer = () => {
   return (
-    <footer>
-      <p>© 2025 John Doe. All Rights Reserved.</p>
+    <footer className="footer">
+      <p>© 2025 Valentine Onuoha. All Rights Reserved.</p>
     </footer>
   );
 };

@@ -1,19 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './navbar.css';
-const Navbar = () => {
 
+const Navbar = () => {
   return (
-    <>
-      <nav id="desktop-nav">
-        <div className="logo">Valentine </div>
-        <ul className="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </>
+    <nav className="navbar">
+      <div className="logo">Valentine</div>
+      <div className="nav-items">
+        <a href="#home">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
   );
 };
 

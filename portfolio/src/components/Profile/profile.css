@@ -1,51 +1,87 @@
-#profile {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 80vh;
-  }
-  
-  .section__pic-container {
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-  }
-  
-  .profile-pic {
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .section__text {
-    align-self: center;
-    text-align: center;
-  }
-  
-  .section__text__p1 {
-    font-size: 1.5rem;
-  }
-  
-  .section__text__p2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-  }
-  
-  .section__text__p3 {
-    font-size: 1.25rem;
-    color: rgb(85, 85, 85);
-  }
-  
-  #socials-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .icon {
-    height: 2rem;
-    cursor: pointer;
-  }
-  
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 10%;
+  background-color: #f9f9f9;
+}
+
+.profile-pic-container {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.profile-details {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-details h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-details h3 {
+  font-size: 1.5rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-color-1 {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-color-1:hover {
+  background-color: #0056b3;
+}
+
+.btn-color-2 {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.btn-color-2:hover {
+  background-color: #f0f0f0;
+}

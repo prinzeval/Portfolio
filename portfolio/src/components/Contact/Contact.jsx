@@ -3,12 +3,18 @@ import './contact.css';
 
 const Contact = () => {
   return (
-    <section id="contact">
+    <section id="contact" className="contact-section">
       <div className="contact-info-container">
-        <p>Have a project in mind? Let's talk!</p>
+        <p>Get in Touch</p>
+        <h1>Contact Me</h1>
       </div>
       <div className="btn-container">
-        <button className="btn btn-color-1">Email Me</button>
+        <div className="contact-button">
+          <span className="icon">📧</span>
+          <span>Example@gmail.com</span>
+          <span className="icon">🔗</span>
+          <span>LinkedIn</span>
+        </div>
       </div>
     </section>
   );

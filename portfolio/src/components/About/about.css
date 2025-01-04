@@ -1,28 +1,36 @@
-#about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .about-containers {
+.about-section {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin: 2rem 0;
+    align-items: center;
+    padding: 4rem 10%;
+    background-color: #fff;
   }
   
-  .details-container {
-    padding: 1.5rem;
+  .about-img-container {
     flex: 1;
     text-align: center;
-    background: white;
-    border-radius: 2rem;
-    border: 0.1rem solid rgb(163, 163, 163);
   }
   
-  .about-pic {
+  .about-img {
     border-radius: 2rem;
     width: 300px;
     height: auto;
+    border: 2px solid #ccc;
+  }
+  
+  .about-details {
+    flex: 1;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .about-details h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-details p {
+    font-size: 1.2rem;
+    color: #555;
   }
   

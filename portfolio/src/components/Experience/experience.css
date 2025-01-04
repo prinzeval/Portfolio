@@ -1,17 +1,46 @@
-#experience {
-    padding: 4rem 0;
+.experience-section {
+    padding: 4rem 10%;
+    background-color: #f9f9f9;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
   
   .experience-details-container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-  }
-  
-  .article-container {
-    display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
+  }
+  
+  .experience-category {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 300px;
+  }
+  
+  .experience-category h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .experience-category ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .experience-category li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .checkmark {
+    margin-right: 0.5rem;
+    color: green;
   }
   
