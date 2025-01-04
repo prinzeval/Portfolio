@@ -1,0 +1,23 @@
+#projects {
+    padding: 4rem 0;
+  }
+  
+  .project-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .project-card {
+    text-align: center;
+  }
+  
+  .project-img {
+    width: 300px;
+    border-radius: 2rem;
+  }
+  
+  .project-title {
+    margin: 1rem 0;
+  }
+  

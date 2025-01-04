@@ -1,9 +1,24 @@
-import React from 'react'
+import React from 'react';
+import './project.css';
+import project1 from '../../assets/project-1.png';
+import project2 from '../../assets/project-2.png';
 
-import './project.css'
+const Projects = () => {
+  return (
+    <section id="projects">
+      <h2 className="title">Projects</h2>
+      <div className="project-container">
+        <div className="project-card">
+          <img src={project1} alt="Project 1" className="project-img" />
+          <h3 className="project-title">Project 1</h3>
+        </div>
+        <div className="project-card">
+          <img src={project2} alt="Project 2" className="project-img" />
+          <h3 className="project-title">Project 2</h3>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-const Project = ()=>(
-    <h1>Project</h1>
-);
-
-export default Project;
+export default Projects;
