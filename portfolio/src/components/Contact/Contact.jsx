@@ -1,5 +1,7 @@
 import React from 'react';
 import './contact.css';
+import { MdOutgoingMail } from 'react-icons/md';
+import { FaSquareGithub, FaLinkedin } from 'react-icons/fa6';
 
 const Contact = () => {
   return (
@@ -10,10 +12,13 @@ const Contact = () => {
       </div>
       <div className="btn-container">
         <div className="contact-button">
-          <span className="icon">📧</span>
-          <span>Example@gmail.com</span>
-          <span className="icon">🔗</span>
-          <span>LinkedIn</span>
+          <MdOutgoingMail className="icon" /> <span>valentineallpowers@gmail.com</span>
+        </div>
+        <div className="contact-button">
+          <FaLinkedin className="icon" /> <span>LinkedIn</span>
+        </div>
+        <div className="contact-button">
+          <FaSquareGithub className="icon" /> <span>GitHub</span>
         </div>
       </div>
     </section>

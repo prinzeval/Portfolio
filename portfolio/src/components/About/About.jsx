@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import aboutpic from '../../assets/about-pic.png';
+import aboutpic from '../../assets/val photo.jpeg';
 
 const About = () => {
   return (
@@ -11,9 +11,9 @@ const About = () => {
       <div className="about-details">
         <h2>About Me</h2>
         <p>
-          I am a passionate front-end developer with experience in creating
-          beautiful and functional web interfaces. I enjoy solving challenging
-          problems and turning ideas into reality.
+          I am Valentine Onuoha Chinaechetam, a passionate front-end developer
+          with experience in creating beautiful and functional web interfaces.
+          I enjoy solving challenging problems and turning ideas into reality. Currently pursuing a Bachelor’s Degree in Computer Engineering at European University of Lefke.
         </p>
       </div>
     </section>

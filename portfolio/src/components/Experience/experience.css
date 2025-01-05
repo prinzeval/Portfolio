@@ -20,7 +20,12 @@
     border: 1px solid #ccc;
     padding: 1rem;
     border-radius: 8px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    min-height: 300px; /* Ensures all boxes are the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .experience-category h3 {
@@ -31,12 +36,25 @@
   .experience-category ul {
     list-style: none;
     padding: 0;
+    flex-grow: 1;
   }
   
   .experience-category li {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
+  }
+  
+  .experience-item {
+    margin-bottom: 1rem;
+  }
+  
+  .experience-item h4 {
+    font-weight: bold;
+  }
+  
+  .experience-item p {
+    margin: 0.3rem 0;
   }
   
   .checkmark {

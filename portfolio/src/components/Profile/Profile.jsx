@@ -1,8 +1,7 @@
 import React from 'react';
 import './profile.css';
-import profilePic from '../../assets/profile-pic.png';
-import linkedinIcon from '../../assets/linkedin.png';
-import githubIcon from '../../assets/github.png';
+import profilePic from '../../assets/val pic 2.jpeg';
+import { FaLinkedin, FaSquareGithub } from 'react-icons/fa6';
 
 const Profile = () => {
   return (
@@ -15,8 +14,12 @@ const Profile = () => {
         <h1>Valentine Onuoha</h1>
         <h3>A Fullstack Developer</h3>
         <div className="social-icons">
-          <img src={linkedinIcon} alt="LinkedIn" className="icon" />
-          <img src={githubIcon} alt="GitHub" className="icon" />
+          <a href="https://www.linkedin.com/in/onuoha-valentine-b62447224/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="icon" />
+          </a>
+          <a href="https://github.com/prinzeval" target="_blank" rel="noopener noreferrer">
+            <FaSquareGithub className="icon" />
+          </a>
         </div>
         <div className="btn-container">
           <button className="btn btn-color-1">Download CV</button>
