@@ -1,4 +1,3 @@
-import React from 'react';
 import {Footer,Experience,Projects,Contact,About,Profile,Navbar} from './components';
 import "./App.css"
 function App() {
