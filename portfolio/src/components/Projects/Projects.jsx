@@ -1,8 +1,8 @@
 import React from 'react';
 import './project.css';
-import project1 from '../../assets/web-scrapping.jpg';
+import project1 from '../../assets/possibility.png';
 import project2 from '../../assets/smart quiz.png';
-import project3 from '../../assets/project-3.png';
+import project3 from '../../assets/logo.png';
 
 const Projects = () => {
     return (
@@ -12,7 +12,7 @@ const Projects = () => {
                 <div className="project-card">
                     <img src={project1} alt="Project 1" className="project-img" />
                     <h3 className="project-title">Web scrappers Project</h3>
-                    <p>A Fullstack project ,Extract data from any website, it stores scraped data for easy fetching</p>
+                    <p>A Fullstack project ,Extract data from any website,Then stores the scraped data in the database for easy Retrieval</p>
                     <div className="project-buttons">
                         <a href="https://github.com/prinzeval/cmnd-scrapper-python" target="_blank" rel="noopener noreferrer">
                             <button className="project-button">GitHub</button>
@@ -41,7 +41,7 @@ const Projects = () => {
                 <div className="project-card">
                     <img src={project3} alt="Project 3" className="project-img" />
                     <h3 className="project-title">Gpt3-landing</h3>
-                    <p>A dynamic web application built with React, leveraging reusable components for an efficient and modular design. This project showcases React's flexibility and scalability,</p>
+                    <p>A dynamic web application built with React, leveraging reusable components for an efficient and modular design. This project showcases React's flexibility</p>
                     <div className="project-buttons">
                         <a href="https://github.com/prinzeval" target="_blank" rel="noopener noreferrer">
                             <button className="project-button">GitHub</button>
