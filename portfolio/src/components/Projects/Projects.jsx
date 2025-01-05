@@ -11,8 +11,8 @@ const Projects = () => {
       <div className="project-container">
         <div className="project-card">
           <img src={project1} alt="Project 1" className="project-img" />
-          <h3 className="project-title">Project One</h3>
-          <p>Better Communication with Each Other</p>
+          <h3 className="project-title"> Web scrappper</h3>
+          <p>A Fullstack project, webscraper that extract data from any website, It stores data for easy fetching</p>
           <div className="project-buttons">
             <button className="project-button">GitHub</button>
             <button className="project-button">Live Demo</button>

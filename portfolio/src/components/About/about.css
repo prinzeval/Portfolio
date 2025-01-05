@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     padding: 4rem 10%;
-    background-color: #fff;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
   }
   
   .about-img-container {
@@ -32,5 +32,21 @@
   .about-details p {
     font-size: 1.2rem;
     color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      padding: 2rem 5%;
+    }
+    .about-img {
+      width: 200px;
+    }
+    .about-details h2 {
+      font-size: 1.5rem;
+    }
+    .about-details p {
+      font-size: 1rem;
+    }
   }
   

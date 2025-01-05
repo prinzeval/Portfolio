@@ -12,13 +12,19 @@ const Contact = () => {
       </div>
       <div className="btn-container">
         <div className="contact-button">
-          <MdOutgoingMail className="icon" /> <span>valentineallpowers@gmail.com</span>
+          <a href="mailto:valentineallpowers@gmail.com">
+            <MdOutgoingMail className="icon" /> <span>---------</span>
+          </a>
         </div>
         <div className="contact-button">
-          <FaLinkedin className="icon" /> <span>LinkedIn</span>
+          <a href="https://www.linkedin.com/in/onuoha-valentine-b62447224/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="icon" /> <span>----------</span>
+          </a>
         </div>
         <div className="contact-button">
-          <FaSquareGithub className="icon" /> <span>GitHub</span>
+          <a href="https://github.com/prinzeval" target="_blank" rel="noopener noreferrer">
+            <FaSquareGithub className="icon" /> <span>--------</span>
+          </a>
         </div>
       </div>
     </section>

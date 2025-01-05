@@ -17,7 +17,7 @@ html {
   align-items: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   padding: 1rem 10%;
-  background-color: #fff;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
 }
 
 .logo {
@@ -41,4 +41,19 @@ html {
 
 .nav-items a:hover {
   color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem 5%;
+  }
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .logo {
+    margin-bottom: 1rem;
+  }
 }

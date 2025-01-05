@@ -1,6 +1,6 @@
 .projects-section {
     padding: 4rem 10%;
-    background-color: #fff;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
   }
   
   .title {
@@ -23,11 +23,13 @@
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .project-img {
     width: 100%;
     border-radius: 1rem;
+    border: 2px solid #ccc;
   }
   
   .project-title {
@@ -48,10 +50,16 @@
     background-color: #007bff;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   .project-button:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
   }
   
+  @media (max-width: 768px) {
+    .project-card {
+      max-width:100%;
+    }
+}

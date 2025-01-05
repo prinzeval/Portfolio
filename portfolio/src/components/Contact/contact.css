@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     padding: 4rem 10%;
-    background-color: #f9f9f9;
+    background: linear-gradient(135deg, #f0f9ff, #cbebff);
   }
   
   .contact-info-container {
@@ -14,17 +14,19 @@
   
   .contact-info-container p {
     font-size: 1.2rem;
-    color: #777;
+    color: #555;
+    margin-bottom: 0.5rem;
   }
   
   .contact-info-container h1 {
     font-size: 2.5rem;
     color: #333;
+    margin-bottom: 1rem;
   }
   
   .btn-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     align-items: center;
   }
@@ -32,19 +34,35 @@
   .contact-button {
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 25px;
-    padding: 10px 20px;
-    background-color: #fff;
+    padding: 10px 30px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  
+  
+  .contact-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   
   .contact-button .icon {
     margin-right: 10px;
+    font-size: 1.5rem;
+    color: #fff;
   }
   
-  .contact-button span {
-    font-size: 1rem;
-    color: #333;
+  @media (max-width: 768px) {
+    .btn-container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact-button {
+      width: 100%;
+      justify-content: center;
+    }
   }
-  
