@@ -2,7 +2,6 @@ import React from 'react';
 import './profile.css';
 import profilePic from '../../assets/val pic 2.jpeg';
 import { FaLinkedin, FaSquareGithub } from 'react-icons/fa6';
-import CV from '../../assets/VALENDATA_CV.pdf';
 
 const Profile = () => {
   return (
@@ -29,9 +28,6 @@ const Profile = () => {
             </div>
           </div>
           <div className="profile-actions">
-            <a href={CV} download="#" className="btn btn-primary">
-              Download CV
-            </a>
             <a href="#contact" className="btn btn-secondary">Let's Talk</a>
           </div>
         </div>
