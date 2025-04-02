@@ -1,59 +1,151 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-html {
-  scroll-behavior: smooth;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  padding: 1rem 10%;
-  background: linear-gradient(135deg,#969696 );
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .logo {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
-.nav-items {
+.navbar.scrolled .logo {
+  color: #1e3a8a;
+}
+
+.logo-text {
+  letter-spacing: 0.5px;
+}
+
+.logo-dot {
+  color: #3b82f6;
+  font-size: 2.2rem;
+  margin-left: 2px;
+}
+
+.nav-menu {
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 
-.nav-items a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.2rem;
+.nav-link {
+  color: white;
   font-weight: 500;
-  transition: color 0.3s ease;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
-.nav-items a:hover {
-  color: #007bff;
+.navbar.scrolled .nav-link {
+  color: #1e3a8a;
 }
 
-@media (max-width: 768px) {
-  .navbar {
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.hire-me-btn {
+  background: #3b82f6;
+  color: white !important;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+.hire-me-btn:hover {
+  background: #2563eb;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+}
+
+.mobile-menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled .mobile-menu-icon {
+  color: #1e3a8a;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
     flex-direction: column;
-    padding: 1rem 5%;
+    background: white;
+    width: 280px;
+    height: 100vh;
+    padding: 80px 40px 40px;
+    gap: 2rem;
+    transition: 0.5s;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
   }
-  .nav-items {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  
+  .nav-menu.active {
+    right: 0;
   }
-  .logo {
-    margin-bottom: 1rem;
+  
+  .nav-link {
+    color: #1e3a8a !important;
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  
+  .hire-me-btn {
+    margin-top: 1rem;
+    display: inline-block;
+  }
+  
+  .mobile-menu-icon {
+    display: block;
+    z-index: 1001;
   }
 }
