@@ -13,7 +13,7 @@ const About = () => {
         <p>
           I am Valentine Onuoha Chinaechetam, a passionate Fullstack developer
           with experience in creating beautiful and functional web interfaces and APIs.
-          I enjoy solving challenging problems and turning ideas into reality. Currently pursuing a Bachelor’s Degree in Computer Engineering at European University of Lefke.
+          I enjoy solving challenging problems and turning ideas into reality. 
         </p>
       </div>
     </section>
