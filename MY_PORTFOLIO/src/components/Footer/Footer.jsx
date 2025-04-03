@@ -4,7 +4,7 @@ import './footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© 2025 Valentine Onuoha. All Rights Reserved.</p>
+      <p>© 2025 Valentine Onuoha. All Rights Reserved. Made With Half  ❤ </p>
     </footer>
   );
 };
