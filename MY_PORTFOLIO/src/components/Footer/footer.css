@@ -2,12 +2,14 @@
     text-align: center;
     padding: 2rem 0;
     background: linear-gradient(135deg, #969696);
-    color: #fff;
+    ;
     font-size: 1rem;
+    background-color: #3b82f6;
   }
   
   .footer p {
     margin: 0;
+    color: white;
   }
   
   @media (max-width: 768px) {
