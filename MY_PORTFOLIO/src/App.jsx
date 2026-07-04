@@ -241,6 +241,14 @@ function Nav() {
           </Button>
           <a
             href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:flex font-semibold border border-background/20 text-background hover:bg-background/10 px-4 py-2 rounded-full text-sm bg-transparent items-center justify-center transition-colors duration-150"
+          >
+            Preview CV
+          </a>
+          <a
+            href="/resume.pdf"
             download="Valentine_Onuoha_Resume.pdf"
             className="hidden sm:flex font-semibold border border-background/20 text-background hover:bg-background/10 px-4 py-2 rounded-full text-sm bg-transparent items-center justify-center transition-colors duration-150"
           >
@@ -360,6 +368,14 @@ function About() {
               className="inline-flex w-fit items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-all duration-150"
             >
               Get Started <ArrowUpRight className="h-4 w-4" />
+            </a>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-fit items-center gap-2 rounded-full border border-divider px-6 py-3 text-sm font-semibold text-foreground hover:bg-default-100 transition-all duration-150"
+            >
+              Preview CV
             </a>
             <a
               href="/resume.pdf"
