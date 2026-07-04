@@ -17,6 +17,10 @@ import project1 from "./assets/project-1.jpg";
 import project2 from "./assets/project-2.jpg";
 import project3 from "./assets/project-3.jpg";
 import project4 from "./assets/project-4.jpg";
+import korastake from "./assets/korastake.png";
+import blinx from "./assets/blinx.png";
+import movie from "./assets/movie.png";
+import valendataImg from "./assets/valendata.png";
 import blog1 from "./assets/blog-1.jpg";
 import blog2 from "./assets/blog-2.jpg";
 import meme from "./assets/meme.png";
@@ -39,13 +43,10 @@ const SERVICES = [
 ];
 
 const PROJECTS = [
-  { name: "KORASTAKE", tag: "Decentralized Staking Protocol", img: project1 },
-  { name: "BLINXS", tag: "Web3 Linking & Messaging System", img: project2 },
-  { name: "VIBE TRADING", tag: "Automated Algorithmic Trading Platform", img: project3 },
-  { name: "SABI VENDOR", tag: "Local Vendor & Inventory SaaS", img: project4 },
-  { name: "AIRLINE SCRAPER", tag: "High-Speed Flight Data Extraction Engine", img: project1 },
-  { name: "MOVIE WEBSITE", tag: "On-Demand Streaming & Search Interface", img: project2 },
-  { name: "WHATSAPP CHATBOT", tag: "AI-Powered Conversational CRM Agent", img: project3 },
+  { name: "VALENDATA", tag: "Market Intelligence & Data Scraper SaaS", img: valendataImg, url: "https://www.valendata.com/" },
+  { name: "KORASTAKE", tag: "Decentralized Staking Protocol", img: korastake, url: "https://github.com/prinzeval" },
+  { name: "BLINXS", tag: "Web3 Linking & Messaging System", img: blinx, url: "https://github.com/prinzeval" },
+  { name: "MOVIE WEBSITE", tag: "On-Demand Streaming & Search Interface", img: movie, url: "https://www.mytvv.com/" },
 ];
 
 const POSTS = [
@@ -440,7 +441,11 @@ function Work() {
           {PROJECTS.map((p) => (
             <Card
               key={p.name}
-              className="border border-divider shadow-none bg-content1 rounded-2xl hover:bg-content2 transition-colors cursor-pointer"
+              className="border border-divider shadow-none bg-content1 rounded-2xl hover:bg-content2 transition-colors cursor-pointer block"
+              as="a"
+              href={p.url}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <CardContent className="p-0 overflow-hidden">
                 <img
