@@ -241,14 +241,6 @@ function Nav() {
           </Button>
           <a
             href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:flex font-semibold border border-background/20 text-background hover:bg-background/10 px-4 py-2 rounded-full text-sm bg-transparent items-center justify-center transition-colors duration-150"
-          >
-            Preview CV
-          </a>
-          <a
-            href="/resume.pdf"
             download="Valentine_Onuoha_Resume.pdf"
             className="hidden sm:flex font-semibold border border-background/20 text-background hover:bg-background/10 px-4 py-2 rounded-full text-sm bg-transparent items-center justify-center transition-colors duration-150"
           >
@@ -362,28 +354,30 @@ function About() {
             Over the years, I've created and shipped multiple SaaS products and web templates used by
             global customers.
           </p>
-          <div className="flex flex-wrap gap-4 items-center pt-2">
+          <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto sm:items-center pt-2">
             <a
               href="#contact"
-              className="inline-flex w-fit items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-all duration-150"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-all duration-150"
             >
               Get Started <ArrowUpRight className="h-4 w-4" />
             </a>
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex w-fit items-center gap-2 rounded-full border border-divider px-6 py-3 text-sm font-semibold text-foreground hover:bg-default-100 transition-all duration-150"
-            >
-              Preview CV
-            </a>
-            <a
-              href="/resume.pdf"
-              download="Valentine_Onuoha_Resume.pdf"
-              className="inline-flex w-fit items-center gap-2 rounded-full border border-divider px-6 py-3 text-sm font-semibold text-foreground hover:bg-default-100 transition-all duration-150"
-            >
-              Download CV
-            </a>
+            <div className="flex gap-3 w-full sm:w-auto">
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 rounded-full border border-divider px-5 py-3 text-sm font-semibold text-foreground hover:bg-default-100 transition-all duration-150 text-center"
+              >
+                Preview CV
+              </a>
+              <a
+                href="/resume.pdf"
+                download="Valentine_Onuoha_Resume.pdf"
+                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 rounded-full border border-divider px-5 py-3 text-sm font-semibold text-foreground hover:bg-default-100 transition-all duration-150 text-center"
+              >
+                Download CV
+              </a>
+            </div>
           </div>
         </div>
       </div>
