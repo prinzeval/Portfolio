@@ -239,14 +239,13 @@ function Nav() {
           >
             {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </Button>
-          <Button
+          <a
             href="/resume.pdf"
             download="Valentine_Onuoha_Resume.pdf"
-            variant="solid"
-            className="hidden sm:flex font-semibold border border-background/20 text-background hover:bg-background/10 px-4 py-2 rounded-full text-sm bg-transparent"
+            className="hidden sm:flex font-semibold border border-background/20 text-background hover:bg-background/10 px-4 py-2 rounded-full text-sm bg-transparent items-center justify-center transition-colors duration-150"
           >
             Download CV
-          </Button>
+          </a>
           <button
             onClick={() => setOpen((v) => !v)}
             className="flex h-8 w-8 items-center justify-center rounded-full bg-background text-foreground sm:hidden"
@@ -356,21 +355,19 @@ function About() {
             global customers.
           </p>
           <div className="flex flex-wrap gap-4 items-center pt-2">
-            <Button
+            <a
               href="#contact"
-              variant="solid"
               className="inline-flex w-fit items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-all duration-150"
             >
               Get Started <ArrowUpRight className="h-4 w-4" />
-            </Button>
-            <Button
+            </a>
+            <a
               href="/resume.pdf"
               download="Valentine_Onuoha_Resume.pdf"
-              variant="bordered"
               className="inline-flex w-fit items-center gap-2 rounded-full border border-divider px-6 py-3 text-sm font-semibold text-foreground hover:bg-default-100 transition-all duration-150"
             >
               Download CV
-            </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -508,13 +505,12 @@ function Thoughts() {
               <h3 className="font-display text-2xl font-extrabold leading-tight tracking-tight text-background sm:text-4xl">
                 AGI isn't magic. It's just an LLM with agentic loops, custom skills, and API access to rewrite itself.
               </h3>
-              <Button
+              <a
                 href="#work"
-                variant="bordered"
-                className="w-fit border-background/30 text-background/80 hover:text-background px-5 py-2.5 rounded-full text-sm font-semibold bg-transparent"
+                className="w-fit border border-background/30 text-background/80 hover:text-background px-5 py-2.5 rounded-full text-sm font-semibold bg-transparent inline-flex items-center gap-2 transition-colors duration-150"
               >
                 View All Work <ArrowUpRight className="h-4 w-4" />
-              </Button>
+              </a>
             </CardContent>
           </Card>
         </div>
